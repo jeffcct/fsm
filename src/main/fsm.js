@@ -13,6 +13,8 @@ function convertLatexShortcuts(text) {
 		text = text.replace(new RegExp('_' + i, 'g'), String.fromCharCode(8320 + i));
 	}
 
+	text = text.replace(new RegExp('\\\\rightarrow', 'g'), String.fromCharCode(8594))
+
 	return text;
 }
 
